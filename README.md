@@ -1,6 +1,9 @@
-# 云编译 N1 OpenWrt 固件
+# 云编译 N1 OpenWrt 固件-纯净版
+
+> 纯净版openwrt, 仅添加 hellowrld
 
 **更新日志**
+- 20210621 精简：删除不需要的包，添加 helloworld
 - 20210210 修正源码更新造成的编译错误，集成 docker。脚本文件调整。
 - 20201124 修正 set-env 有效性造成的编译错误
 - 20200926 修正 openclash 编译错误
