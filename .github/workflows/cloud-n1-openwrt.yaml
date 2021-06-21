@@ -65,7 +65,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         cd openwrt
-        sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+        echo 'src-git helloworld https://github.com/fw876/helloworld' >> ./feeds.conf.default
         ./scripts/feeds update -a
 
     - name: Install feeds
