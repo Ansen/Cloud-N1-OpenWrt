@@ -1,4 +1,4 @@
-name: Cloud N1 OpenWrt
+name: Cloud Build OpenWrt
 
 on:
   workflow_dispatch:
@@ -118,7 +118,7 @@ jobs:
     - name: Create release
       uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }} ❤️ | N1-OpenWrt 自动编译
+        name: ${{ env.DATE }} ❤️ | Lxc-OpenWrt 自动编译
         allowUpdates: true
         tag: ${{ env.tag_name }}
         commit: main
