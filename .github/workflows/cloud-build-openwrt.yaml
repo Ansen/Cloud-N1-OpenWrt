@@ -113,7 +113,7 @@ jobs:
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_firmware
-        path: ${{ env.FIRMWARE }}
+        path: ${{ env.FIRMWARE }}/*
 
     - name: Create release
       uses: ncipollo/release-action@v1
